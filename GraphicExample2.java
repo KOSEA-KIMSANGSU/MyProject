@@ -3,6 +3,8 @@ package chapter19;
 // update : 2017-08-31
 
 // update : 2017-09-01
+
+// update : 2017-09-02 Yosemite
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Container;
@@ -23,7 +25,7 @@ public class GraphicExample2 {
 
 	public static void main(String[] args) {
 		
-		JFrame frame = new JFrame("Ç÷¾×Çü ºÐÆ÷ ±×·¡ÇÁ ÇÁ·Î±×·¥");
+		JFrame frame = new JFrame("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½");
 		frame.setLocation(500, 200);
 		frame.setPreferredSize(new Dimension(500, 350));
 		Container contentPane = frame.getContentPane();
@@ -37,15 +39,15 @@ public class GraphicExample2 {
 		JTextField text3 = new JTextField(3);
 		JTextField text4 = new JTextField(3);
 		
-		JButton button = new JButton("±×·¡ÇÁ ±×¸®±â");
+		JButton button = new JButton("ï¿½×·ï¿½ï¿½ï¿½ ï¿½×¸ï¿½ï¿½ï¿½");
 		
-		controlPanel.add(new JLabel("OÇü"));
+		controlPanel.add(new JLabel("Oï¿½ï¿½"));
 		controlPanel.add(text1);
-		controlPanel.add(new JLabel("AÇü"));
+		controlPanel.add(new JLabel("Aï¿½ï¿½"));
 		controlPanel.add(text2);		
-		controlPanel.add(new JLabel("BÇü"));
+		controlPanel.add(new JLabel("Bï¿½ï¿½"));
 		controlPanel.add(text3);
-		controlPanel.add(new JLabel("ABÇü"));
+		controlPanel.add(new JLabel("ABï¿½ï¿½"));
 		controlPanel.add(text4);		
 		
 		controlPanel.add(button);
@@ -93,10 +95,10 @@ class DrawingPanel extends JPanel {
 		
 		g.setColor(Color.BLACK);
 		g.setFont(new Font(" ", Font.PLAIN, 12));
-		g.drawString(" OÇü:³ë¶û ", 300, 150);
-		g.drawString(" AÇü:»¡°­ ", 300, 170);
-		g.drawString(" BÇü:ÆÄ¶û ", 300, 190);
-		g.drawString(" ABÇü:ÃÊ·Ï ", 300, 210);
+		g.drawString(" Oï¿½ï¿½:ï¿½ï¿½ï¿½ ", 300, 150);
+		g.drawString(" Aï¿½ï¿½:ï¿½ï¿½ï¿½ï¿½ ", 300, 170);
+		g.drawString(" Bï¿½ï¿½:ï¿½Ä¶ï¿½ ", 300, 190);
+		g.drawString(" ABï¿½ï¿½:ï¿½Ê·ï¿½ ", 300, 210);
 		}
 	
 	void setNumbers(int num1, int num2, int num3, int num4) {
@@ -131,8 +133,8 @@ class DrawActionListener implements ActionListener {
 			drawingPanel.repaint();
 		}
 		catch(NumberFormatException nfe) {
-			JOptionPane.showMessageDialog(drawingPanel, "Àß¸øµÈ ¼ýÀÚ Æ÷¸ËÀÔ´Ï´Ù.", 
-					"¿¡·¯¸Þ½ÃÁö", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(drawingPanel, "ï¿½ß¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.", 
+					"ï¿½ï¿½ï¿½ï¿½ï¿½Þ½ï¿½ï¿½ï¿½", JOptionPane.ERROR_MESSAGE);
 		}	
 	}
 }
