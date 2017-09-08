@@ -15,7 +15,6 @@ public class Pibonachi {
 			b = c;
 			c = a + b;
 		}
-
 	}
 
 }
